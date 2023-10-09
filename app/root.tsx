@@ -17,21 +17,20 @@ export const links: LinksFunction = () => [
 
 export default function App() {
     return (
-        <html>
+        <html lang="en">
             <head>
-                <link
-                    rel="icon"
-                    href="data:image/x-icon;base64,AA"
-                />
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
                 <Meta />
                 <Links />
             </head>
-            <body>
-                <h1 className="text-3xl">Hello world!</h1>
+            <body className="font-inter">
+                <h1 className="text-xl">Hello world!</h1>
                 <Outlet />
 
                 <Scripts />
-                <LiveReload />
+                <LiveReload port={54323} />
             </body>
         </html>
     );
