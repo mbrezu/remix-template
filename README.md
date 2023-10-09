@@ -6,10 +6,16 @@ Intended to use with [degit](https://github.com/Rich-Harris/degit), e.g. `degit 
 
 ## Usage
 
+### Development
+
 1. Install with `npm i`
-2. Run in developer mode with `npm run dev`
-3. Build with `npm run build`
-4. Run in production with `npm run start`
+2. Optionally typecheck with `npm typecheck`
+3. Run in developer mode with `npm run dev`
+
+### Production
+
+1. Build with `npm run build`
+2. Run in production with `npm run start`
 
 ## Docker
 
