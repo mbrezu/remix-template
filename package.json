@@ -13,6 +13,9 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "remix dev -c \"node server.mjs\""
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build/index.js",
+    "typecheck": "tsc"
   }
 }
