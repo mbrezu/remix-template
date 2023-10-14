@@ -1,22 +1,16 @@
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 
-import {
-    Links,
-    LiveReload,
-    Meta,
-    Outlet,
-    Scripts,
-} from "@remix-run/react";
-
 import styles from "./tailwind.css";
+import { Meta, Links, Outlet, Scripts, LiveReload } from "@remix-run/react";
+import Header from "./components/Header";
 
 export const links: LinksFunction = () => [
     { rel: "stylesheet", href: styles },
     ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
-export default function App() {
+export default function Component() {
     return (
         <html lang="en">
             <head>
@@ -27,7 +21,7 @@ export default function App() {
                 <Links />
             </head>
             <body className="font-inter">
-                <h1 className="text-xl">Hello world!</h1>
+                <Header/>
                 <Outlet />
 
                 <Scripts />
