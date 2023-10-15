@@ -28,7 +28,7 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build/index.js",
-    "test": "jest --watch",
+    "test": "jest --watch --collect-coverage",
     "typecheck": "tsc"
   }
 }
