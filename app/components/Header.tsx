@@ -1,4 +1,9 @@
+import { Link } from "@remix-run/react";
 
 export default function Header() {
-    return (<h1 className="text-xl">Hello world!</h1>);
+    return (<div>
+        <h1>Hello world!</h1>
+
+        <p><Link to="/about">About</Link></p>
+    </div>);
 }

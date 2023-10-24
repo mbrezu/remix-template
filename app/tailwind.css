@@ -6,3 +6,15 @@
     font-family: "Inter";
     src: url("/assets/fonts/Inter.ttf");
 }
+
+/* [MDX] Rules below useful for the example MDX. */
+
+h1 {
+    @apply text-4xl font-bold;
+}
+
+a {
+    @apply text-blue-500 underline;
+}
+
+/* [MDX] End of MDX rules. */
